@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ExploreApplication<explore>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.entra21.explore.ExploreApplication",
+            "projectName": "explore",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
