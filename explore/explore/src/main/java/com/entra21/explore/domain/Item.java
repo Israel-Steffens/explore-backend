@@ -33,9 +33,7 @@ public class Item implements Serializable {
 
     @OneToMany (mappedBy = "itemEstoque")
     private List<Estoque>estoque;
-    
-   @ManyToOne
-   @JoinColumn(name = "idUnidMed")
+
    private UnidadeMedida uniMedida;
 
    @OneToMany(mappedBy = "item")

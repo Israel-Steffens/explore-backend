@@ -14,7 +14,7 @@ public interface ItemRepository extends JpaRepository<Item , Integer>{
     @Query("SELECT max(i_objeto.id) from Item i_objeto")
     Integer getMaxIdItem();
 
-    @Query("SELECT i_objeto FROM Item i_objeto WHERE i_objeto.uniMedida.idUnidMed = :pIdunidmed ORDER BY i_objeto.uniMedida.idUnidMed")
-    List<Item> findAllByItem(@Param(value = "pIdunidmed") Integer pIdunidmed);
+    @Query("SELECT i_objeto FROM Item i_objeto WHERE i_objeto.idItem = :idItem")
+    List<Item> findAllByItem(@Param(value = "idItem") Integer idItem);
 
 }
